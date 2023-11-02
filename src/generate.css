@@ -1,0 +1,100 @@
+.loadingspinner {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .loadingspinner div {
+    position: absolute;
+    top: 33px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: #100f0f;
+    animation-timing-function: cubic-bezier(0, 1, 1, 0);
+  }
+  .loadingspinner div:nth-child(1) {
+    left: 8px;
+    animation: loadingspinner1 0.6s infinite;
+  }
+  .loadingspinner div:nth-child(2) {
+    left: 8px;
+    animation: loadingspinner2 0.6s infinite;
+  }
+  .loadingspinner div:nth-child(3) {
+    left: 32px;
+    animation: loadingspinner2 0.6s infinite;
+  }
+  .loadingspinner div:nth-child(4) {
+    left: 56px;
+    animation: loadingspinner3 0.6s infinite;
+  }
+  @keyframes loadingspinner1 {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  @keyframes loadingspinner3 {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0);
+    }
+  }
+  @keyframes loadingspinner2 {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(24px, 0);
+    }
+  }
+  
+  .img{
+    width: 400px;
+
+  }
+
+  .advice{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .welcome{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    font-family:CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  }
+
+ 
+.button{
+    background-color: #c2fbd7;
+    border-radius: 100px;
+    box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+    color: rgb(0, 19, 0);
+    cursor: pointer;
+    display: inline-block;
+    font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 0;
+    font-size: 16px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button:hover {
+  box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+  
+}
